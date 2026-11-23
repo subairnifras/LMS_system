@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import { ArrowDownToLine, ArrowLeft, ArrowRight, Bell, BookOpen, CalendarDays, Check, ChevronLeft, ChevronRight, CircleHelp, ClipboardList, CodeXml, Database, GraduationCap, LayoutDashboard, Menu, Moon, PanelTop, Search, Sun, Target, X } from 'lucide-react'
+// @ts-ignore -- CSS side-effect imports are handled by the bundler.
 import './style.css'
 import Login from './Login'
 
