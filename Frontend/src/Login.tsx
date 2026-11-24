@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { BookOpen, Check, Eye, EyeOff, GraduationCap, LockKeyhole, Mail, Moon, Sun } from 'lucide-react'
+// @ts-ignore CSS is loaded by the bundler; no TypeScript declaration is needed here.
 import './login.css'
 
 type LoginProps = {
@@ -70,11 +71,7 @@ export default function Login({ onLogin, theme, onToggleTheme }: LoginProps) {
           {error && <p className="login-error" role="alert">{error}</p>}
           <button className="login-submit" type="submit">Log in</button>
         </form>
-        <div className="login-demo">
-          <div><b>Take a look around</b><button type="button" onClick={fillDemo}>Use demo account</button></div>
-          <p id="demo-note">Frontend preview with sample data. Use these demo details to explore.</p>
-          <dl><div><dt>Email</dt><dd>student@learnspace.demo</dd></div><div><dt>Password</dt><dd>LearnSpace123</dd></div></dl>
-        </div>
+        
       </div>
       <p className="login-copyright">© 2026 LearnSpace</p>
     </section>
